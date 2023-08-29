@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    meta(name="viewport", content='width=device-width, initial-scale=1.0')
+    title= title
+    link(href='../bootstrap/css/amelia.bootstrap.css', rel='stylesheet')
+
+    
+  body
+    nav.navbar.fixed-top.navbar-expand-md.navbar-light
+      .container
+        a.navbar-brand(href='/') Resturent 
+          button.navbar-toggler(type='button', data-toggle='collapse',data-target='#navbarMain')
+            span.navbar-toggler-icon
+          #navbarMain.navbar-collapse.collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href='/about/') About
+        ul.navbar-nav.mr-auto 
+          li.nav-item 
+            a.nav-link(href='/location/') Location
+
+
+  .container
+    block content 
+    footer
+      .row
+        .col-12
+          small &copy; Getting Mean - Simon Holmes/Clive Harber 2018
+    script(src='../javascripts/jquery-1.11.1.min.js') 
+    script(src='../bootstrap/js/bootstrap.min.js')
+    script(src='../bootstrap/js/bootstrap.js') 
