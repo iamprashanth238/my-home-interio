@@ -5,14 +5,10 @@ const ctrlOther = require('../controllers/others');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Resturent' });
+  res.render('index', { title: 'My-Home-Interio' });
 });
-/* Home pages */
-router.get('/',ctrlLocation.homelist);
-router.get('/location',ctrlLocation.locationInfo);
-router.get('/location/addreview',ctrlLocation.addReview);
 
-/* About page */
-router.get('/about',ctrlOther.about)
+/* Home pages */
+//router.get('/',ctrlLocation.homepage);
 
 module.exports = router;
