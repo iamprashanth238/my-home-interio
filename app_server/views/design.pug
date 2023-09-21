@@ -5,7 +5,7 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Design page 
     link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css")
-    link(rel="stylesheet", href="style.css") 
+    
 
   body
     // Navigation Bar
@@ -30,21 +30,22 @@ html(lang="en")
       .row
         // Design Item 1
         .col-md-3.mb-4
-          .card
-            img.card-img-top(src="design1.jpg", alt="Design 1")
-            .card-body
-              h5.card-title Design Title 1
-              p.card-text Description of Design 1
-              a.btn.btn-primary(href="#") View Details
+            .card
+                img.card-img-top(src="/images/04.jpg", alt="Design 1") // Adjust the src attribute
+                .card-body
+                    h5.card-title Design Title 1
+                    p.card-text Description of Design 1
+                    a.btn.btn-primary(href="#") View Details
 
         // Design Item 2
         .col-md-3.mb-4
-          .card
-            img.card-img-top(src="design2.jpg", alt="Design 2")
-            .card-body
-              h5.card-title Design Title 2
-              p.card-text Description of Design 2
-              a.btn.btn-primary(href="#") View Details
+            .card
+                img.card-img-top(src="/images/05.jpg", alt="Design 2") // Adjust the src attribute
+                .card-body
+                    h5.card-title Design Title 2
+                    p.card-text Description of Design 2
+                    a.btn.btn-primary(href="#") View Details
+
 
         // Add more design items as needed
 
@@ -63,7 +64,4 @@ html(lang="en")
           li.page-item
             a.page-link(href="#") Next
 
-  // Include your JavaScript and jQuery scripts here
-
-  // Optionally include Amazon-like CSS styles
   link(rel="stylesheet", href="amazon-style.css")
