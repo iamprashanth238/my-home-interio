@@ -16,7 +16,14 @@ router.get('/', function(req, res, next) {
 
 /*Design page*/
 router.get('/design-page',ctrlLocation.designpage);
-/* Home pages */
-//router.get('/',ctrlLocation.homepage);
+
+/* SignUp page */
+
+router.get('/signup',ctrlLocation.signuppage);
+
+
+/* Signin page */
+router.get('/signin',ctrlLocation.signinpage);
+
 
 module.exports = router;

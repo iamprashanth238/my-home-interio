@@ -29,23 +29,56 @@ html(lang="en")
     
       // Design Items
       .row
-        // Design Item 1
-        .col-md-3.mb-4
-            .card
-                img.card-img-top(src="/images/04.jpg", alt="Design 1")
-                .card-body
-                  h5.card-title Design Title 1
-                  p.card-text Description of Design 1
-                  a.btn.btn-primary(href="#") View Details
+      // Design Item 1
+      .col-md-3.mb-4
+        .card
+          img.card-img-top(src="/images/04.jpg", alt="Design 1")
+          .card-body
+            h5.card-title Design Title 1
+            p.card-text Description of Design 1
+            a.btn.btn-primary(href="#", data-toggle="collapse", data-target="#details1") View Details
+            #details1.collapse
+              p More details about Design 1
+              a.btn.btn-success(href="#") Book Now
+      .row 
+      // Design Item 2
+      .col-md-3.mb-4
+        .card
+          img.card-img-top(src="/images/05.jpg", alt="Design 2")
+          .card-body
+            h5.card-title Design Title 2
+            p.card-text Description of Design 2
+            a.btn.btn-primary(href="#", data-toggle="collapse", data-target="#details2") View Details
+            #details2.collapse
+              p More details about Design 2
+              a.btn.btn-success(href="#") Book Now
 
-        // Design Item 2
-        .col-md-3.mb-4
-            .card
-                img.card-img-top(src="/images/05.jpg", alt="Design 2")
-                .card-body
-                  h5.card-title Design Title 2
-                  p.card-text Description of Design 2
-                  a.btn.btn-primary(href="#") View Details
+      .row 
+      // Design Item 3
+      .col-md-3.mb-4
+        .card
+          img.card-img-top(src="/images/05.jpg", alt="Design 2")
+          .card-body
+            h5.card-title Design Title 2
+            p.card-text Description of Design 2
+            a.btn.btn-primary(href="#", data-toggle="collapse", data-target="#details2") View Details
+            #details2.collapse
+              p More details about Design 2
+              a.btn.btn-success(href="#") Book Now
+
+      .row 
+      // Design Item 4
+      .col-md-3.mb-4
+        .card
+          img.card-img-top(src="/images/05.jpg", alt="Design 2")
+          .card-body
+            h5.card-title Design Title 2
+            p.card-text Description of Design 2
+            a.btn.btn-primary(href="#", data-toggle="collapse", data-target="#details2") View Details
+            #details2.collapse
+              p More details about Design 2
+              a.btn.btn-success(href="#") Book Now
+
 
 
         // Add more design items as needed
