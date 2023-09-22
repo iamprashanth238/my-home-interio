@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Signup Page
+    link(rel='stylesheet', href='public/stylesheets/sigup.css')
+  body
+    nav
+      ul
+        li
+          a(href='/signup') Sign Up
+        li
+          a(href='/signin') Sign In
+        li
+          a(href='/design') Design Page
+    main
+      h1 Welcome to Interior Designing Company
+      form(action='/index.pug', method='post')
+        label(for='name') Name:
+        input(type='text', id='name', name='name', required)
+        label(for='email') Email:
+        input(type='email', id='email', name='email', required)
+        label(for='phone') Phone Number:
+        input(type='tel', id='phone', name='phone', pattern='[0-9]{10}', required)
+        button(type='submit') Submit
