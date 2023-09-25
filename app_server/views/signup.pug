@@ -2,16 +2,16 @@ doctype html
 html
   head
     title Signup Page
-    link(rel='stylesheet', href='public/stylesheets/sigup.css')
+    link(rel='stylesheet', href='/stylesheets/sigup.css')
   body
     nav
       ul
         li
-          a(href='/signup') Sign Up
+          a(href='signup.pug') SignUp
         li
-          a(href='/signin') Sign In
+          a(href='signin.pug') SignIn
         li
-          a(href='/design') Design Page
+          a(href='design.pug') DesignPage
     main
       h1 Welcome to Interior Designing Company
       form(action='/index.pug', method='post')
