@@ -5,7 +5,7 @@ const Schena = mongoose.Schema;
 const userSchema = new Schena({
     name: { type: String, required: true },
     email: { type: String, required: true},
-    number: { type: Interger, required: true }
+    number: { type: Integer, required: true }
 });
 
 const User = mongoose.model('User', userSchema);
