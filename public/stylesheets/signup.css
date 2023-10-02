@@ -1,68 +1,113 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Apply a background color and font styles to the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+}
+
 /* Style the navigation bar */
-nav {
-    background-color: #232F3E;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  
-  /* Style the list of links */
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-  }
-  
-  /* Style the links */
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-  }
-  
-  /* Change the color of links on hover */
-  nav a:hover {
-    background-color: #37475A;
-  }
-  
-  /* Style the main content */
-  main {
-    max-width: 800px;
-    margin: 20px auto;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Style the form */
-  form {
-    background-color: #F0F2F2;
-    border: 1px solid #D5D9D9;
-    padding: 20px;
-  }
-  
-  /* Style the labels */
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  /* Style the inputs */
-  input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #A6A6A6;
-  }
-  
-  /* Style the button */
-  button {
-    background-color: #FF9900;
-    color: white;
-    border: none;
-    padding: 10px;
-  }
-  
-  /* Change the button color on hover */
-  button:hover {
-    background-color: #E88B00;
-  }
-  
+header {
+  background-color: #232f3e;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Style the main content section */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form {
+  text-align: center;
+}
+
+.signup-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.signup-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form button[type="submit"] {
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-form button[type="submit"]:hover {
+  background-color: #ff7d00;
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #232f3e;
+  color: #fff;
+}
+
+/* Style links in the footer */
+footer a {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
