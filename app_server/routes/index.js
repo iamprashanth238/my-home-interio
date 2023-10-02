@@ -4,6 +4,10 @@ const ctrlLocation = require('../controllers/locations');
 const ctrlOther = require('../controllers/others');
 const stat = express();
 
+const userRouter = require('./users');
+
+router.use('/users', userRouter);
+
 //use static file
 
 stat.use(express.static('public'));
