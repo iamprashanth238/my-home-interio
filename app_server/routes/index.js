@@ -29,7 +29,9 @@ router.get('/gallery',ctrllocation.gallerypage);
 
 router.get('/about',ctrllocation.aboutpage);
 
+router.post('/register',ctrllocation.registerr);
 router.get('/register',ctrllocation.registerpage);
+
 
 
 

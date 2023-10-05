@@ -1,8 +1,6 @@
 // Schema for user authentication
 const mongoose = require('mongoose');
-const Schena = mongoose.Schema;
-
-const userSchema = new Schena({
+const userSchema = mongoose.Schema({
     name: { type: String, required: true },
     email: { type: String, required: true},
     number: { type: Number, required: true }
