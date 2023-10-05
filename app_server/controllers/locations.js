@@ -1,23 +1,50 @@
+const models = require('../../app_api/models/user');
 /* home page*/
 const homepage = (req, res) => {
     res.render('index', {title:'My-Home-Interio'});
 };
 
-const designpage = (req, res) => {
-    res.render('design',{title:"Design Interio"});
+// gallery page
+const gallerypage = (req, res) => {
+    res.render('gallery', {title:'gallery'});
 };
 
-const signuppage = (req, res) => {
-    res.render('signup',{title:"Sign Up"});
+// about page
+const aboutpage = (req, res) => {
+    res.render('about', {title:'about'});
 };
 
-const signinpage = (req, res) => {
-    res.render('signin',{title:'Sign in'});
+// GET register page
+const registerpage = (req,res) => {
+    res.render('register', {title:'register'});
 };
+//POST register page
+const registerr = function(req,res){
+    try{
+    models.collection.insertOne({
+        name:"sample",
+        email:"Helloworld",
+        number:"1234567890"  });
+    }
+    catch(err){
+        console.log(err);
+    }
+    res.render("success",{title:'Success'});
+
+
+}
+
+//sucess page
+const successpage = (req, res) => {
+    res.render('success', {title:'success'});
+}
+
 
 module.exports = {
     homepage,
-    designpage,
-    signuppage,
-    signinpage
+    gallerypage,
+    aboutpage,
+    registerpage,
+    successpage,
+    registerr
 }

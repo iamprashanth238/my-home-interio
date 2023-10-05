@@ -1,0 +1,109 @@
+doctype html
+html
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='keywords', content='')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='../images/favicon.png', type='image/gif')
+
+    title My Home Interio 
+
+    link(rel='stylesheet', type='text/css', href='../stylesheets/bootstrap.css')
+    link(href='https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='../stylesheets/ekko-lightbox.css')
+    link(href='../stylesheets/font-awesome.min.css', rel='stylesheet')
+    link(href='../stylesheets/style.css', rel='stylesheet')
+    link(href='../stylesheets/responsive.css', rel='stylesheet')
+    link(href='../stylesheets/register.css', rel='stylesheet')
+
+  body
+
+    // header section starts
+    header.header_section.innerpage_header
+      .container-fluid
+        nav.navbar.navbar-expand-lg.custom_nav-container
+          a.navbar-brand(href='../views/index')
+            span My Home Interio 
+          div
+            div.custom_menu-btn
+              button(onclick='openNav()')
+                span.s-1
+                span.s-2
+                span.s-3
+              #myNav.overlay
+                .overlay-content
+                  a(href='/') Home
+                  a(href='/about') About
+                  a(href='/gallery') Gallery
+                  a(href='/register') Register
+
+    // end header section
+
+    // gallery section
+    section.gallery_section.layout_padding
+        .container-fluid
+            h2 Registration Form
+            form(action='/register', method='POST')
+                .form-group
+                    label(for='name') Name:
+                    input(type='text', id='name', name='name', required)
+                .form-group
+                    label(for='email') Email:
+                    input(type='email', id='email', name='email', required)
+                .form-group
+                    label(for='phone') Phone Number:
+                    input(type='tel', id='phone', name='phone', required)
+                .form-group
+                    button(type='submit') Submit
+
+
+    // end gallery section
+
+    // info section
+    section.info_section.innerpage_info_section
+      .container
+        .row.info_main_row
+          .col-md-6.col-lg-3
+            .info_insta
+              h4
+                a.navbar-brand.m-0.p-0
+                  span My Home Interio 
+              p.mb-0 We are a team of designers and developers that create high quality HTML Template & Woocommerce, Shopify Theme.
+          .col-md-6.col-lg-3
+            .info_detail
+              h4 Company
+              p.mb-0 our company is a first class engineering and construction company
+          .col-md-6.col-lg-3
+            h4 Contact Us
+            .info_contact
+              a(href='')
+                i.fa.fa-map-marker(aria-hidden='true')
+                span Location
+              a(href='')
+                i.fa.fa-phone(aria-hidden='true')
+                span Call +91 1234567890
+              a(href='')
+                i.fa.fa-envelope
+                span my_home_interio@gmail.com
+          .col-md-6.col-lg-3
+            h4 Follow Us
+            .social_box
+              a(href='')
+                i.fa.fa-facebook(aria-hidden='true')
+              a(href='')
+                i.fa.fa-twitter(aria-hidden='true')
+              a(href='')
+                i.fa.fa-linkedin(aria-hidden='true')
+              a(href='')
+                i.fa.fa-instagram(aria-hidden='true')
+
+    // end info_section
+    block content 
+    script(src='../javascripts/jquery-3.4.1.min.js')
+    script(src='../javascripts/bootstrap.js')
+    script(src='../javascripts/ekko-lightbox.min.js')
+    script(src='../javascripts/custom.js')

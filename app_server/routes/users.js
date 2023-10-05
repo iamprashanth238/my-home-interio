@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 // calling the User model
-const User = require('../models/user');
+const User = require('../../app_api/models/user');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {

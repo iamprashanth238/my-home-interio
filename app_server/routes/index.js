@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
-const ctrlLocation = require('../controllers/locations');
-const ctrlOther = require('../controllers/others');
+const ctrllocation = require('../controllers/locations');
+const ctrlOthers=require('../controllers/others');
+
 const stat = express();
 
 const userRouter = require('./users');
@@ -12,22 +13,26 @@ router.use('/users', userRouter);
 
 stat.use(express.static('public'));
 
-/* GET home page. */
+/* GET home page. 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'My-Home-Interio' });
 });
+*/
+
+// rendering location pages and other pages
+router.get('/', function(req, res){
+  res.render('índex',{title: 'My Home Interio'});
+});
 
 
-/*Design page*/
-router.get('/design-page',ctrlLocation.designpage);
+router.get('/gallery',ctrllocation.gallerypage);
 
-/* SignUp page */
+router.get('/about',ctrllocation.aboutpage);
 
-router.get('/signup',ctrlLocation.signuppage);
+router.post('/register',ctrllocation.registerr);
+router.get('/register',ctrllocation.registerpage);
 
 
-/* Signin page */
-router.get('/signin',ctrlLocation.signinpage);
 
 
 module.exports = router;
