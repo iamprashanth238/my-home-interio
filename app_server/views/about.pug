@@ -8,7 +8,7 @@ html
     meta(name='keywords', content='')
     meta(name='description', content='')
     meta(name='author', content='')
-    link(rel='icon', href='public/images/favicon.png', type='image/gif')
+    link(rel='icon', href='../images/favicon.png', type='image/gif')
 
     title My Home Interio
 
@@ -18,15 +18,13 @@ html
     link(href='../stylesheets/font-awesome.min.css', rel='stylesheet')
     link(href='../stylesheets/style.css', rel='stylesheet')
     link(href='../stylesheets/responsive.css', rel='stylesheet')
-    link(href='../stylesheets/slider.css', rel='stylesheet')
-    
 
   body
 
-    header.header_section.innerpage_header
+    header.header_section
       .container-fluid
         nav.navbar.navbar-expand-lg.custom_nav-container
-          a.navbar-brand(href='index.html')
+          a.navbar-brand(href='/')
             span My Home Interio
           div
             div.custom_menu-btn
@@ -39,77 +37,24 @@ html
                   a(href='/') Home
                   a(href='/about') About
                   a(href='/gallery') Gallery
-                  a(href='/register') Register
+                  a(href='/register') Register 
                   
 
     // end header section
-    section.main_section 
-      .container 
-        .row
-          .col-md-12
-            .main_heading 
-              h1 My Home Interio
-              p We design your dream Home 
 
-              // gallery division
-              .slideshow-container
-                // Full-width images with number and caption text
-                .mySlides.fade
-                  .numbertext 1 / 3
-                  img(src='../images/b1.jpg', style='width:40%')
-                  .text Caption Text
-
-                .mySlides.fade
-                  .numbertext 2 / 3
-                  img(src='../images/b2.jpg', style='width:40%')
-                  .text Caption Two
-
-                .mySlides.fade
-                  .numbertext 3 / 3
-                  img(src='../images/b3.jpg', style='width:40%')
-                  .text Caption Three
-
-                // Next and previous buttons
-                a.prev(onclick='plusSlides(-1)') &#10094;
-                a.next(onclick='plusSlides(1)') &#10095;
-
-                br
-
-                // The dots/circles
-              div(style='text-align:center')
-              span.dot(onclick='currentSlide(1)')
-              span.dot(onclick='currentSlide(2)')
-              span.dot(onclick='currentSlide(3)')
-
-    // about client section
-    section.client_section.innerpage_client_section
+    // about section
+    section.about_section.layout_padding
       .container
         .row
-          .col-md-12
-            .heading_container
-              h2 Servies We Provide
-              br
-            .client_container
-              .row
-                .client_box
-                  img(src='../images/s1.jpg', alt='image')
-                  h2 Home Interior
-                  br
-
-                .client_box 
-                  img(src='../images/s2.jpg', alt='image')
-                  h2 Office Interior
-
-                .client_box 
-                  img(src='../images/s3.jpg', alt='image')
-                  h2 Kitchen Interior
-
-            p Head to our gallery page to book your appointment with us.
-            a(href='/gallery') Book Now
-            br
-
-      
-              
+          .col-md-6
+            .img-box
+              img(src='../images/about-img.jpg', alt='')
+          .col-md-6
+            .detail-box
+              .heading_container
+                h2 About Us
+              p We are a team of passinate interior designers based in New York. We are commited to create the best solutions for each space. We have been in the business for more than 10 years and we have already finished more than 100 projects. We are commited to create the best solutions for each space. We have been in the business for more than 10 years and we have already finished more than 100 projects.
+              a(href='') Read More
 
     // end about section
 
@@ -159,5 +104,3 @@ html
     script(src='../javascripts/bootstrap.js')
     // custom js
     script(src='../javascripts/custom.js')
-    // slider js
-    script(src='../javascripts/slider.js')

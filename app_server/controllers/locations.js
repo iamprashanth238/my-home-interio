@@ -3,21 +3,25 @@ const homepage = (req, res) => {
     res.render('index', {title:'My-Home-Interio'});
 };
 
-const designpage = (req, res) => {
-    res.render('design',{title:"Design Interio"});
+// gallery page
+const gallerypage = (req, res) => {
+    res.render('gallery', {title:'gallery'});
 };
 
-const signuppage = (req, res) => {
-    res.render('signup',{title:"Sign Up"});
+// about page
+const aboutpage = (req, res) => {
+    res.render('about', {title:'about'});
 };
 
-const signinpage = (req, res) => {
-    res.render('signin',{title:'Sign in'});
+// register page
+const registerpage = (req,res) => {
+    res.render('register', {title:'register'});
 };
+
 
 module.exports = {
     homepage,
-    designpage,
-    signuppage,
-    signinpage
+    gallerypage,
+    aboutpage,
+    registerpage
 }
