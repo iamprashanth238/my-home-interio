@@ -25,7 +25,6 @@
   font-size: 18px;
   transition: 0.9s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
 }
 
 /* Position the "next button" to the right */
