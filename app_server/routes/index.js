@@ -13,15 +13,15 @@ router.use('/users', userRouter);
 
 stat.use(express.static('public'));
 
-/* GET home page. 
+
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'My-Home-Interio' });
+  res.get('index', { title: 'My-Home-Interio' });
 });
-*/
+
 
 // rendering location pages and other pages
 router.get('/', function(req, res){
-  res.render('índex',{title: 'My Home Interio'});
+  res.get('index',{title: 'My Home Interio'});
 });
 
 

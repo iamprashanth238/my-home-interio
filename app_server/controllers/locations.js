@@ -22,9 +22,10 @@ const registerpage = (req,res) => {
 const registerr = function(req,res){
     try{
     models.collection.insertOne({
-        name:"sample",
-        email:"Helloworld",
-        number:"1234567890"  });
+        name:req.body.name,
+        email:req.body.email,
+        number:req.body.number,
+    });
     }
     catch(err){
         console.log(err);
